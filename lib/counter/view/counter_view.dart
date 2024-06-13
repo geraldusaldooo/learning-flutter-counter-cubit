@@ -11,7 +11,7 @@ class CounterView extends StatelessWidget {
       body: Center(
         child: BlocBuilder<CounterCubit, int>(
           builder: (context, state) {
-            return Text('$state');
+            return Text('$state',style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold));
           },
             ),
       ),
